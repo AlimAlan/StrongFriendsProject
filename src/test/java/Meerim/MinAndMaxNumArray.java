@@ -3,23 +3,21 @@ package Meerim;
 public class MinAndMaxNumArray {
     public static void main(String[] args) {
         int[] arr={1,4,6,8,90,234,67};
-        System.out.println("Minimum number from Array => "+minNum(arr));
-        System.out.println("Maximum number from Array => "+maxNum(arr));
+        minAndMaxNum(arr);
     }
-    public static int minNum(int[]num){
-        int temp=num[0];
-        for(int i=0;i<num.length;i++){
-            if(temp<num[i]){
-                temp=num[i];
+    public static void minAndMaxNum(int[]num) {
+        int max = num[0];
+        int min = num[0];
+        int temp = num[0];
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] > max) {
+                max=num[i];
+
+            }else if(num[i]<min){
+                min=num[i];
             }
         }
-        return temp;
-    }
-    public static int maxNum(int[]num){
-        int temp=num[0];
-        for(int i=0; i<num.length;i++){
-            temp=num[i];
-        }
-        return temp;
+        System.out.println("Maximum number => "+max);
+        System.out.println("Minimum number => "+min);
     }
 }
