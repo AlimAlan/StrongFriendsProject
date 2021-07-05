@@ -32,6 +32,7 @@ public class PrintFirstLetterUpperCase {
             System.out.print(domain);
 
         }
-    }
+
+}
 
 
