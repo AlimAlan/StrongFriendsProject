@@ -31,6 +31,7 @@ public class PrintFirstLetterUpperCase {
             domain = email.substring(0);
             System.out.print(domain);
 
+
         }
 
 }
