@@ -8,10 +8,8 @@ public class PrintEvenIntegersRepl {
          */
 
         for(int i = 80; i < 20; i--){
-            if(i % 4 == 0  && i % 2 ==0) {
+            if(i % 2 == 0) {
                 System.out.println(i + "even integers");
-            }else if( i % 20 == 0){
-                System.out.println(i + "integers are printed");
             }else{
                 System.out.println("All numbers odd");
             }
